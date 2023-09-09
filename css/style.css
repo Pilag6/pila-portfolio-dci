@@ -391,18 +391,208 @@ header {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    position: relative;
-    overflow-x: hidden;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
 
     background: #fff;
+    position: relative;
 }
 
 .tools img {
     width: 40px;
     height: 40px;
+    scroll-snap-align: center;
 }
 
-/* MEDIA QUERYS */
+/* ----------------------
+    PROJECTS SECTION
+---------------------- */
+
+.projects {
+    border: var(--border-main);
+    background: #fff;
+}
+
+.projects-logo {
+    width: 275px;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-right: var(--border-main);
+    background: var(--nb-blue);
+}
+
+/* ----------------------
+    PROJECTS CARDS SECTION
+---------------------- */
+
+.projects-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: var(--border-main);
+}
+
+.card {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    font-family: var(--font-secondary);
+}
+
+.card-1 {
+    border-bottom: var(--border-main);
+    border-right: var(--border-main);
+}
+
+.card-3 {
+    border-bottom: var(--border-main);
+    border-left: var(--border-main);
+}
+
+.card-1 .card-spotify {
+    background: var(--nb-pink);
+    box-shadow: var(--shadow-square);
+}
+
+.card-2 .card-spotify {
+    background: var(--nb-orange);
+    box-shadow: var(--shadow-square);
+}
+
+.card-3 .card-spotify {
+    background: var(--nb-lila);
+    box-shadow: var(--shadow-square);
+}
+
+/* card inside */
+
+.card-spotify {
+    height: 630px;
+    width: 355px;
+    border: var(--border-btn);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 30px;
+    padding: 40px;
+}
+
+/* spotify 1 */
+
+.spotify-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spotify-1 h3 {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.spotify-1 i {
+    font-size: 1rem;
+    border: var(--border-btn);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-square);
+}
+
+/* spotify 2 */
+
+.card-img {
+    width: 100%;
+    height: 265px;
+    border: var(--border-btn);
+    box-shadow: 8px 8px 0 var(--black);
+}
+
+.card-img img {
+    display: block;
+    height: 100%;
+}
+
+/* spotify 3 */
+
+.spotify-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.spotify-3 h2 {
+    line-height: 1;
+}
+
+.spotify-3 p {
+    margin-bottom: 5px;
+}
+
+
+/* progress bar */
+
+.progress-div {
+    /* width: 100%; */
+    height: 4px;
+    background: #33333338;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.progress-div span {
+    display: block;
+    height: 100%;
+    background: var(--black);
+    overflow: hidden;
+}
+
+.progress-div span::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 25%;
+    width: 8px;
+    height: 8px;
+    background: var(--nb-orange);
+    border: 1px solid var(--black);
+    box-shadow: 1px 1px 0 var(--black);
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* spotify 4 */
+
+.spotify-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+/* ----------------------
+    ABOUT SECTION
+---------------------- */
+
+/* ----------------------
+    MEDIA QUERYS
+---------------------- */
 
 /* @media only screen and (max-width: 1024px) {
 }
@@ -416,9 +606,10 @@ header {
 } */
 
 @media only screen and (max-width: 650px) {
-    .nav-bottom__social,
-    .logo__underline {
-        display: none;
+    /* nav */
+
+    .nav-top {
+        padding: 0 20px;
     }
 
     .nav-bottom__logo {
@@ -426,24 +617,33 @@ header {
         border-right: 0;
     }
 
-    .nav-top {
-        padding: 0 20px;
+    .nav-bottom__social,
+    .logo__underline {
+        display: none;
     }
 
+    /* hero */
     .hero-text {
         padding: 0 20px;
+        grid-column: 1 / 4;
     }
 
     .hero-text h1 {
         font-size: 4rem;
     }
 
-    .hero-text p {
-        font-size: 1.5rem;
-    }
-
     .h1-decoration {
         display: none;
+    }
+
+    .hero-main-draw {
+        top: 0;
+        right: 0;
+        width: 100px;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
     }
 
     .hero-btn {
@@ -456,8 +656,15 @@ header {
         font-size: 1rem;
     }
 
-    .hero-arrow-1,
-    .hero-main-draw {
+    .hero-arrow-1 {
         display: none;
+    }
+
+    .hero-img {
+        grid-row: 3 / 4;
+    }
+
+    .img-waves {
+        width: 30px;
     }
 }
