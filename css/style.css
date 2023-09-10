@@ -64,7 +64,8 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
     background: var(--nb-green);
-    box-shadow: 3px 3px 0 var(--black), 3px -3px 0 var(--black);
+    box-shadow: 3px 3px 0 var(--black);
+    border: var(--border-btn);
 }
 
 /* WRAPPER container */
