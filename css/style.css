@@ -45,6 +45,13 @@ body {
     background-color: var(--white-body);
 }
 
+/* SELECTION */
+
+::selection {
+    color: var(--nb-yellow);
+    background: var(--nb-green);
+}
+
 /* SCROLLBAR */
 
 html::-webkit-scrollbar {
@@ -125,6 +132,14 @@ header {
 
 .nav-about:hover ~ .nav-top__curvyArrow {
     left: 80px;
+}
+
+.nav-top__x {
+    transition: all 0.3s;
+    cursor: crosshair;
+}
+.nav-top__x:hover {
+    scale: 1.5;
 }
 /* NAV TOP END */
 
@@ -222,7 +237,7 @@ header {
 .hero {
     border-left: var(--border-main);
     border-right: var(--border-main);
-    height: calc(100vh - (var(--sm-block) * 3));
+    height: calc(100vh - (var(--sm-block) * 2));
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -266,25 +281,27 @@ header {
     top: -25px;
     left: 340px;
     cursor: crosshair;
+    animation: discover 2s ease-in-out;
 }
 
 .hero-main-draw {
     right: 50px;
     top: 20px;
     cursor: crosshair;
-    animation: rotate 12s ease-in-out;
+    animation: discover 2s ease-in-out;
+    transition: all 0.3s ease-in;
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(360deg);
-    }
+.hero-main-draw:hover {
+    transform: scale(1.3);
+}
 
+@keyframes discover {
+    0% {
+        transform: translate(-1000px, 0);
+    }
     100% {
-        transform: rotate(0deg);
+        transform: translate(0, 0);
     }
 }
 
@@ -300,6 +317,7 @@ header {
     bottom: -25px;
     left: 70px;
     cursor: crosshair;
+    animation: discover 2s ease-in-out;
 }
 
 /* hero buttons */
@@ -357,6 +375,7 @@ header {
     right: -38px;
     z-index: 10;
     cursor: crosshair;
+    animation: discover 2s ease-in-out;
 }
 
 /* hero image */
@@ -378,12 +397,14 @@ header {
     bottom: 20px;
     right: 20px;
     cursor: crosshair;
+    animation: discover 2s ease-in-out;
 }
+
 
 /* ----------------------
     TOOLS SECTION
 ---------------------- */
-.tools {
+/* .tools {
     height: 85px;
     border-left: var(--border-main);
     border-right: var(--border-main);
@@ -402,14 +423,15 @@ header {
     width: 40px;
     height: 40px;
     scroll-snap-align: center;
-}
+} */
 
 /* ----------------------
     PROJECTS SECTION
 ---------------------- */
 
 .projects {
-    border: var(--border-main);
+    border-left: var(--border-main);
+    border-right: var(--border-main);
     background: #fff;
 }
 
@@ -507,6 +529,7 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow-square);
+    cursor: crosshair;
 }
 
 .fa-angle-down {
@@ -615,6 +638,7 @@ header {
     width: 30px;
     height: 30px;
     background: var(--nb-blue);
+    cursor:grab;
 }
 
 .fa-backward-step,
@@ -622,6 +646,7 @@ header {
     width: 35px;
     height: 35px;
     background: var(--nb-green);
+    cursor:cell;
 }
 
 .fa-play {
@@ -717,5 +742,14 @@ header {
 
     .img-waves {
         width: 30px;
+    }
+
+    .card-1 {
+        border-right: 0;
+    }
+
+    .card-3 {
+        border-left: 0;
+        border-top: var(--border-main);
     }
 }
