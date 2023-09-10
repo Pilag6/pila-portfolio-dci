@@ -728,6 +728,26 @@ i.fa-play:hover {
     ABOUT SECTION
 ---------------------- */
 
+.about {
+    border-left: var(--border-main);
+    border-right: var(--border-main);
+    border-top: var(--border-main);
+    background: #fff;
+
+}
+
+.about-logo {
+    width: 275px;
+    height: var(--sm-block);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-right: var(--border-main);
+    background: var(--nb-orange);
+}
+
 /* ----------------------
     MEDIA QUERYS
 ---------------------- */
