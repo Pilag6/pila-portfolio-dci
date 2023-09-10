@@ -479,9 +479,9 @@ header {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     /* align-items: center; */
-    gap: 30px;
+    gap: 25px;
     padding: 40px;
 }
 
@@ -509,6 +509,14 @@ header {
     box-shadow: var(--shadow-square);
 }
 
+.fa-angle-down {
+    background-color: var(--nb-green);
+}
+
+.fa-ellipsis-vertical {
+    background-color: var(--nb-yellow);
+}
+
 /* spotify 2 */
 
 .card-img {
@@ -516,6 +524,7 @@ header {
     height: 265px;
     border: var(--border-btn);
     box-shadow: 8px 8px 0 var(--black);
+    position: relative;
 }
 
 .card-img img {
@@ -539,7 +548,6 @@ header {
     margin-bottom: 5px;
 }
 
-
 /* progress bar */
 
 .progress-div {
@@ -559,7 +567,7 @@ header {
 }
 
 .progress-div span::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -3px;
     left: 25%;
@@ -570,6 +578,13 @@ header {
     box-shadow: 1px 1px 0 var(--black);
 }
 
+.progress-div .span-2::after {
+    left: 46%;
+}
+.progress-div .span-3::after {
+    left: 35%;
+}
+
 .time {
     display: flex;
     justify-content: space-between;
@@ -577,14 +592,50 @@ header {
 
 /* spotify 4 */
 
-.spotify-4 {
+.spotify-4,
+.spotify-5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-
 }
 
+.spotify-4 i,
+.spotify-5 i {
+    font-size: 1rem;
+    border: var(--border-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-square);
+}
+
+.fa-heart,
+.fa-shuffle {
+    width: 30px;
+    height: 30px;
+    background: var(--nb-blue);
+}
+
+.fa-backward-step,
+.fa-forward-step {
+    width: 35px;
+    height: 35px;
+    background: var(--nb-green);
+}
+
+.fa-play {
+    width: 40px;
+    height: 40px;
+}
+
+/* spotify 5 */
+
+.spotify-5 i {
+    width: 30px;
+    height: 30px;
+    background: var(--nb-yellow);
+}
 
 /* ----------------------
     ABOUT SECTION
