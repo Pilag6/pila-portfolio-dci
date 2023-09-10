@@ -229,8 +229,6 @@ header {
 }
 /* NAV BOTTOM END */
 
-
-
 /* ----------------------
     HERO SECTION
 ---------------------- */
@@ -398,7 +396,7 @@ so, the hover effect in the arrow can work
 .hero-img {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
-    
+
     border-left: var(--border-main);
     border-bottom: var(--border-main);
 
@@ -418,7 +416,6 @@ so, the hover effect in the arrow can work
     cursor: crosshair;
     animation: discover 2s ease-in-out;
 }
-
 
 /* ----------------------
     TOOLS SECTION (optional)
@@ -447,9 +444,6 @@ so, the hover effect in the arrow can work
     height: 40px;
     scroll-snap-align: center;
 } */
-
-
-
 
 /* ----------------------
     PROJECTS SECTION
@@ -694,7 +688,7 @@ so, the hover effect in the arrow can work
     width: 30px;
     height: 30px;
     background: var(--nb-blue);
-    cursor:grab;
+    cursor: grab;
 }
 
 .fa-backward-step,
@@ -702,7 +696,7 @@ so, the hover effect in the arrow can work
     width: 37px;
     height: 37px;
     background: var(--nb-green);
-    cursor:cell;
+    cursor: cell;
 }
 
 .fa-play {
@@ -714,7 +708,6 @@ so, the hover effect in the arrow can work
 i.fa-play:hover {
     box-shadow: none;
 }
-
 
 /* spotify 5 */
 
@@ -729,11 +722,8 @@ i.fa-play:hover {
 ---------------------- */
 
 .about {
-    border-left: var(--border-main);
-    border-right: var(--border-main);
-    border-top: var(--border-main);
+    border: var(--border-main);
     background: #fff;
-
 }
 
 .about-logo {
@@ -746,6 +736,87 @@ i.fa-play:hover {
 
     border-right: var(--border-main);
     background: var(--nb-orange);
+}
+
+.about-content {
+    display: flex;
+    border-top: var(--border-main);
+}
+
+/* about content left */
+
+.about-content__left {
+    flex: 1 0 275px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.about-content__left img {
+    width: 50px;
+}
+
+/* about content right */
+
+.about-content__right {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    position: relative;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-text p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+/* about btns */
+
+.about-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-btn i {
+    font-size: 1.8rem;
+    border: var(--border-btn);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--nb-yellow);
+    box-shadow: var(--shadow-square);
+    transition: all 0.3s ease-in;
+}
+
+.about-btn i:hover {
+    box-shadow: none;
+}
+
+.berlin-text h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+.rulo {
+    width: 80px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
 
 /* ----------------------
@@ -770,8 +841,8 @@ i.fa-play:hover {
         padding: 0 20px;
     }
 
-    .nav-bottom__logo, 
-    .projects-logo, 
+    .nav-bottom__logo,
+    .projects-logo,
     .about-logo {
         width: 100%;
         border-right: 0;
@@ -835,5 +906,15 @@ i.fa-play:hover {
     .card-3 {
         border-left: 0;
         border-top: var(--border-main);
+    }
+
+    /* about */
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content__left {
+        flex: 1 0 100%;
     }
 }
