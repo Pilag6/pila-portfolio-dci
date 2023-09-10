@@ -73,7 +73,6 @@ html::-webkit-scrollbar-thumb {
     max-width: 1280px;
     margin: 0 auto;
     /* border: var(--border); */
-    height: 1200px; /*delete*/
     background: #fff;
 }
 
@@ -100,7 +99,7 @@ header {
     border: var(--border-main);
 }
 
-/* nav menu right */
+/* nav top menu right */
 
 .nav-top__list {
     position: relative;
@@ -110,12 +109,10 @@ header {
 }
 
 .nav-top__list a {
-    color: var(--black);
     font-size: 1.7rem;
     font-weight: 600;
     text-decoration: underline 2px;
     text-underline-offset: 4px;
-    font-family: var(--font-primary);
 }
 
 .nav-top__list a:hover {
@@ -152,7 +149,6 @@ header {
     background: #fff;
 
     height: var(--sm-block);
-
     border-bottom: var(--border-main);
     border-left: var(--border-main);
     border-right: var(--border-main);
@@ -164,6 +160,7 @@ header {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     border-right: var(--border-main);
     background: var(--nb-yellow);
@@ -179,7 +176,7 @@ header {
 
 .logo__underline {
     position: absolute;
-    bottom: 12px;
+    bottom: 10px;
     left: 120px;
 }
 
@@ -210,6 +207,7 @@ header {
     height: 50px;
     margin: 0 20px;
     background: #fff;
+
     color: var(--black);
     border: var(--border-btn);
     box-shadow: var(--shadow-square);
@@ -217,6 +215,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
     transition: all 0.3s ease-in;
 }
 
@@ -230,14 +229,16 @@ header {
 }
 /* NAV BOTTOM END */
 
+
+
 /* ----------------------
     HERO SECTION
 ---------------------- */
 
 .hero {
+    height: calc(100vh - (var(--sm-block) * 2));
     border-left: var(--border-main);
     border-right: var(--border-main);
-    height: calc(100vh - (var(--sm-block) * 2));
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -251,9 +252,12 @@ header {
 .hero-text {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+
     display: grid;
     align-content: center;
+
     padding: var(--gral-padding);
+
     position: relative;
 }
 
@@ -262,15 +266,16 @@ header {
     position: relative;
 }
 
-/* frontend */
+/* hero frontend section */
 
 .hero-text h1 {
     font-family: var(--font-secondary);
     font-size: 7rem;
     color: var(--black);
-    line-height: 0.8;
+    line-height: 0.9;
 }
 
+/* ----- hero draws ----- */
 .h1-decoration,
 .hero-main-draw,
 .hero-stars {
@@ -296,6 +301,8 @@ header {
     transform: scale(1.3);
 }
 
+/* ANIMATION FOR DRAWINGS IN THE HERO */
+
 @keyframes discover {
     0% {
         transform: translate(-1000px, 0);
@@ -305,7 +312,7 @@ header {
     }
 }
 
-/* student */
+/* hero student section */
 
 .hero-text p {
     font-size: 3rem;
@@ -320,36 +327,44 @@ header {
     animation: discover 2s ease-in-out;
 }
 
-/* hero buttons */
+/* hero buttons section */
 
 .hero-btn {
     grid-column: 1 / 3;
     grid-row: 3 / 4;
+
     border-top: var(--border-main);
     border-bottom: var(--border-main);
+    padding: var(--gral-padding);
+
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 0 50px;
+
     position: relative;
 }
 
 .hero-btn a {
-    color: var(--black);
     font-size: 1.5rem;
     font-weight: 600;
-    background: var(--nb-yellow);
     padding: 10px 20px;
+
+    background: var(--nb-yellow);
     border: var(--border-btn);
     box-shadow: var(--shadow-square);
-    rotate: -3deg;
+
     transition: all 0.3s ease-in;
 }
 
+/* 
+it is important to define the order
+so, the hover effect in the arrow can work
+ */
+
 .hero-arrow-1 {
-    transition: all 0.3s ease-in;
     order: 1;
     cursor: crosshair;
+    transition: all 0.3s ease-in;
 }
 
 .btn-projects {
@@ -373,16 +388,20 @@ header {
     position: absolute;
     top: -40px;
     right: -38px;
-    z-index: 10;
+    z-index: 100;
     cursor: crosshair;
     animation: discover 2s ease-in-out;
 }
 
-/* hero image */
+/* hero image section */
 
 .hero-img {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
+    
+    border-left: var(--border-main);
+    border-bottom: var(--border-main);
+
     position: relative;
 }
 
@@ -402,10 +421,14 @@ header {
 
 
 /* ----------------------
-    TOOLS SECTION
+    TOOLS SECTION (optional)
+    If i add this section I need to change the height
+    in the hero section instead 2 => 3: 
+
+    .hero => height: calc(100vh - (var(--sm-block) * 3)); 
 ---------------------- */
 /* .tools {
-    height: 85px;
+    height: var(--sm-block);
     border-left: var(--border-main);
     border-right: var(--border-main);
     display: flex;
@@ -425,10 +448,14 @@ header {
     scroll-snap-align: center;
 } */
 
+
+
+
 /* ----------------------
     PROJECTS SECTION
 ---------------------- */
 
+/* projects logo section */
 .projects {
     border-left: var(--border-main);
     border-right: var(--border-main);
@@ -437,7 +464,7 @@ header {
 
 .projects-logo {
     width: 275px;
-    height: 85px;
+    height: var(--sm-block);
 
     display: flex;
     align-items: center;
@@ -463,7 +490,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+
+    padding: 30px 0;
+
     font-family: var(--font-secondary);
 }
 
@@ -476,6 +505,8 @@ header {
     border-bottom: var(--border-main);
     border-left: var(--border-main);
 }
+
+/* card spotify */
 
 .card-1 .card-spotify {
     background: var(--nb-pink);
@@ -492,22 +523,21 @@ header {
     box-shadow: var(--shadow-square);
 }
 
-/* card inside */
+/* card spotify inside */
 
 .card-spotify {
-    height: 630px;
     width: 355px;
+    padding: 30px;
     border: var(--border-btn);
     border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     gap: 25px;
-    padding: 40px;
 }
 
-/* spotify 1 */
+/* spotify 1° line */
 
 .spotify-1 {
     display: flex;
@@ -521,14 +551,17 @@ header {
 }
 
 .spotify-1 i {
-    font-size: 1rem;
-    border: var(--border-btn);
     width: 30px;
     height: 30px;
+
+    font-size: 1rem;
+    border: var(--border-btn);
+    box-shadow: var(--shadow-square);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--shadow-square);
+
     cursor: crosshair;
 }
 
@@ -540,22 +573,22 @@ header {
     background-color: var(--nb-yellow);
 }
 
-/* spotify 2 */
+/* spotify 2° line */
 
 .card-img {
     width: 100%;
     height: 265px;
     border: var(--border-btn);
     box-shadow: 8px 8px 0 var(--black);
-    position: relative;
 }
 
 .card-img img {
     display: block;
     height: 100%;
+    width: 100%;
 }
 
-/* spotify 3 */
+/* spotify 3° line */
 
 .spotify-3 {
     display: flex;
@@ -567,8 +600,30 @@ header {
     line-height: 1;
 }
 
+.spotify-3-title {
+    position: relative;
+}
+
+.spotify-3-title-draw {
+    position: absolute;
+    width: 15px;
+    top: -8px;
+}
+
+.card-1 .spotify-3-title-draw {
+    right: 141px;
+}
+
+.card-2 .spotify-3-title-draw {
+    right: 144px;
+}
+
+.card-3 .spotify-3-title-draw {
+    right: 96px;
+}
+
 .spotify-3 p {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 /* progress bar */
@@ -599,6 +654,7 @@ header {
     background: var(--nb-orange);
     border: 1px solid var(--black);
     box-shadow: 1px 1px 0 var(--black);
+    cursor: grab;
 }
 
 .progress-div .span-2::after {
@@ -613,7 +669,7 @@ header {
     justify-content: space-between;
 }
 
-/* spotify 4 */
+/* spotify 4° line */
 
 .spotify-4,
 .spotify-5 {
@@ -643,16 +699,22 @@ header {
 
 .fa-backward-step,
 .fa-forward-step {
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 37px;
     background: var(--nb-green);
     cursor:cell;
 }
 
 .fa-play {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in;
 }
+
+i.fa-play:hover {
+    box-shadow: none;
+}
+
 
 /* spotify 5 */
 
@@ -688,7 +750,9 @@ header {
         padding: 0 20px;
     }
 
-    .nav-bottom__logo {
+    .nav-bottom__logo, 
+    .projects-logo, 
+    .about-logo {
         width: 100%;
         border-right: 0;
     }
