@@ -719,6 +719,88 @@ i.fa-play:hover {
 }
 
 /* ----------------------
+    PROJECTS RELEASE SECTION
+---------------------- */
+.projects-release {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.projects-release h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-secondary);
+}
+
+.release-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-family: var(--font-secondary);
+}
+
+.release article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* release cards title */
+
+.release-card__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.release-card__title h3 {
+    font-size: 1.8rem;
+}
+
+.release-card__title-img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    box-shadow: var(--shadow-square);
+    border: var(--border-btn);
+    transition: all 0.3s ease-in;
+    cursor: crosshair;
+    z-index: 1;
+    background: #fff;
+}
+
+.release-card__title-img:hover {
+    box-shadow: none;
+}
+
+.release-card__title-img img {
+    width: 100%;
+}
+
+.release-star {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+/* release cards content */
+
+.release-card__content {
+    display: flex;
+    width: 300px;
+    height: 135px;
+    border: var(--border-btn);
+    box-shadow: var(--shadow-square);
+}
+
+/* ----------------------
     ABOUT SECTION
 ---------------------- */
 
