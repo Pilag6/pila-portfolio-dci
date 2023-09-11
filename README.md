@@ -79,6 +79,10 @@ Creating the Spotify-style cards was a particularly fulfilling accomplishment. I
 
 - **Scrollbar and Text Selection**: I adjusted the scrollbar and text selection styles to align with the overall design.
 
+<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/8fbc73c3-b7d4-454d-9b8d-3daf95c8992d" alt="" width="40%">
+
+<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/44357439-8bf9-4e11-b857-8e1adbc53a8a" alt="" width="40%">
+
 ### Conclusion
 
 Building my portfolio website in the New Brutalism style was a rewarding challenge. While I aimed for code organization, it occasionally became overwhelming with nearly 700 lines of HTML and over 1000 lines of CSS (excluding the separate Reset CSS file). My future goal is to delve into React and component-based development, which I believe will streamline code maintenance and enhance my web development skills.
