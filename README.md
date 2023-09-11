@@ -1,5 +1,9 @@
 # Portfolio Website Design and Development
 
+***NOTE***: 
+
+This project is only for educational purposes and will only be shared within the DCI Crusaders group environment.
+
 ## Screenshots
 
 
