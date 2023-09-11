@@ -1,5 +1,19 @@
 # Portfolio Website Design and Development
 
+## Screenshots
+
+
+
+<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/c8d86480-a655-4b1a-88ec-269e7a626e81" alt="" width="100%">
+<div style="display: flex;">
+  
+<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/bea358dc-56fe-4a40-89cf-716702181ce3" alt="" width="24%">
+
+<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/dbf16f47-0dab-4ca7-9da0-422a82b13940" alt="" width="74%">
+
+</div>
+
+
 ## Overview
 
 This README provides an overview of the design and development process of my portfolio website, which follows the New Brutalism design trend. It highlights the design choices, inspirations, challenges faced during development, and some extra details.
