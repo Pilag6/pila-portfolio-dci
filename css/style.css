@@ -11,12 +11,12 @@
     --black: #333333;
     --white-body: #f5f5f5;
 
-    --nb-yellow: #f5ff86;
-    --nb-orange: #ffe297;
-    --nb-pink: #fec1e2;
-    --nb-lila: #d7c3ff;
-    --nb-blue: #b0d5f7;
-    --nb-green: #8ee4df;
+    --nb-yellow: hsl(65, 100%, 76%);
+    --nb-orange: hsl(43, 100%, 80%);
+    --nb-pink: hsl(328, 97%, 88%);
+    --nb-lila: hsl(260, 100%, 88%);
+    --nb-blue: hsl(209, 82%, 83%);
+    --nb-green: hsl(177, 61%, 73%);
 
     /* border */
 
