@@ -79,6 +79,9 @@ For sure, creating the **Spotify-style cards** was a particularly fulfilling acc
 
 - **Scrollbar and Text Selection**: I adjusted the scrollbar and text selection styles to align with the overall design.
 
+  ![image](https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/a835f190-ed7e-402f-9965-2b7a67d78402)
+
+
 <img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/8fbc73c3-b7d4-454d-9b8d-3daf95c8992d" alt="" width="40%">
 
 <img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/44357439-8bf9-4e11-b857-8e1adbc53a8a" alt="" width="40%">
