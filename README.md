@@ -55,7 +55,7 @@ Here are the key design choices:
 
 With the design, fonts, colors and assets in place, I was ready to proceed to the coding phase.
 
-### Development | Phase II
+## Development | Phase II
 
 The development phase was both challenging and educational. I encountered various challenges and learned new techniques along the way:
 
@@ -83,7 +83,7 @@ For sure, creating the **Spotify-style cards** was a particularly fulfilling acc
 
 <img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/44357439-8bf9-4e11-b857-8e1adbc53a8a" alt="" width="40%">
 
-### Conclusion
+## Conclusion
 
 Building my portfolio website in the **New Brutalism** style was a rewarding challenge. While I aimed for code organization, it occasionally became overwhelming with nearly **700 lines of HTML** and over **1000 lines of CSS** (excluding the separate **Reset CSS** file). My future goal is to delve into **React** and component-based development, which I believe will streamline code maintenance and enhance my web development skills.
 
