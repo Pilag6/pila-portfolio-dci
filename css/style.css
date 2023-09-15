@@ -581,6 +581,7 @@ so, the hover effect in the arrow can work
     display: block;
     height: 100%;
     width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 /* spotify 3° line */
