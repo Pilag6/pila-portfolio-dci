@@ -18,6 +18,9 @@ This project is only for educational purposes and will only be shared within the
 
 </div>
 
+---
+
+<a href="https://pila-portfolio-dci.netlify.app/"><strong>➥ Live Demo</strong></a>
 
 ## Overview
 
