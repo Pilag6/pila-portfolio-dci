@@ -1,0 +1,54 @@
+@import "variables";
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: $sm-block;
+    background: $nb-green;
+    padding: $gral-padding;
+    border: $border-main;
+
+    .nav-top__list {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+            a {
+                font-size: 1.7rem;
+                font-weight: 600;
+                text-decoration: underline 2px;
+                text-underline-offset: 4px;
+            }
+
+            a:hover {
+                opacity: 0.8;
+                text-decoration: underline 3px $nb-yellow;
+            }
+
+            .nav-top__curvyArrow {
+                position: absolute;
+                top: -20px;
+                left: -40px;
+                transition: all 0.5s;
+            }
+
+            .nav-about:hover ~ .nav-top__curvyArrow {
+                left: 80px;
+            }
+    }
+
+    .nav-top__x {
+        transition: all 0.3s;
+        cursor: crosshair;
+    }
+    .nav-top__x:hover {
+        scale: 1.5;
+    }
+    
+}
+
+
+

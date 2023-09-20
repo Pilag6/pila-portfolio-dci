@@ -1,0 +1,86 @@
+@import "variables";
+
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+
+    height: $sm-block;
+    border-bottom: $border-main;
+    border-left: $border-main;
+    border-right: $border-main;
+
+    .nav-bottom__logo {
+        width: 275px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-right: $border-main;
+        background: $nb-yellow;
+
+        position: relative;
+
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .logo__underline {
+            position: absolute;
+            bottom: 10px;
+            left: 120px;
+        }
+    }
+
+    .nav-bottom__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-left: $border-main;
+
+        .__social {
+            height: 100%;
+            width: 100%;
+            color: $black;
+            background: $nb-yellow;
+            font-size: 1.9rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                width: 50px;
+                height: 50px;
+                margin: 0 20px;
+                background: #fff;
+
+                color: $black;
+                border: $border-btn;
+                box-shadow: $shadow-square;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transition: all 0.3s ease-in;
+            }
+
+            a:hover {
+                box-shadow: none;
+            }
+        }
+
+        .__social--linkedin {
+            border-left: $border-main;
+            border-right: $border-main;
+        }
+    }
+}
+
