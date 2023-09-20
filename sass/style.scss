@@ -1,6 +1,4 @@
-@import "variables";
-@import "navTop";
-@import "navBottom";
+@import "imports";
 
 
 body {
@@ -42,4 +40,16 @@ header {
     position: sticky;
     top: 0;
     z-index: 999;
+}
+
+.hero {
+    height: calc(100vh - $sm-block * 2);
+    border-left: $border-main;
+    border-right: $border-main;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    background: #fff;
 }

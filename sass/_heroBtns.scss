@@ -1,0 +1,61 @@
+@import "variables";
+@import "animation";
+
+.hero-btn {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+
+    border-top: $border-main;
+    border-bottom: $border-main;
+    padding: $gral-padding;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    position: relative;
+
+    a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 10px 20px;
+
+        background: $nb-yellow;
+        border: $border-btn;
+        box-shadow: $shadow-square;
+
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            box-shadow: none;
+            background: $nb-orange;
+        }
+    }
+
+    .btn-arrow-1 {
+        order: 1;
+        cursor: crosshair;
+        transition: all 0.3s ease-in;
+    }
+
+    .btn-projects {
+        order: 2;
+
+        &:hover ~ .btn-arrow-1 {
+            rotate: -90deg;
+        }
+    }
+
+    .btn-curriculum:hover ~ .btn-arrow-1 {
+        rotate: 90deg;
+    }
+
+    .btn-circle {
+        position: absolute;
+        top: -40px;
+        right: -38px;
+        z-index: 100;
+        cursor: crosshair;
+        animation: discover 2s cubic-bezier(0.76, -0.65, 0.03, 1.78);
+    }
+}

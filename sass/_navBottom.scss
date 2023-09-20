@@ -70,10 +70,10 @@
                 justify-content: center;
 
                 transition: all 0.3s ease-in;
-            }
 
-            a:hover {
-                box-shadow: none;
+                &:hover {
+                    box-shadow: none;
+                }
             }
         }
 
@@ -83,4 +83,3 @@
         }
     }
 }
-
