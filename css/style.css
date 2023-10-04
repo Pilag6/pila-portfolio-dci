@@ -455,6 +455,7 @@ so, the hover effect in the arrow can work
     border-left: var(--border-main);
     border-right: var(--border-main);
     background: #fff;
+    scroll-margin-top: calc(var(--sm-block) * 2);
 }
 
 .projects-logo {
