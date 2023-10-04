@@ -8,7 +8,7 @@ This project is only for educational purposes and will only be shared within the
 
 
 
-<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/c8d86480-a655-4b1a-88ec-269e7a626e81" alt="" width="100%">
+<img src="https://github.com/Pilag6/pila-portfolio-dci/assets/79191808/6a9927a1-635b-4855-916b-866bd553c5a1" alt="" width="100%">
 
 <div style="display: flex; justify-content: space-between;">
   
