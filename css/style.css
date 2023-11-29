@@ -454,6 +454,7 @@ so, the hover effect in the arrow can work
 .projects {
     border-left: var(--border-main);
     border-right: var(--border-main);
+    border-bottom: var(--border-main);
     background: #fff;
     scroll-margin-top: calc(var(--sm-block) * 2);
 }
@@ -864,7 +865,8 @@ i.fa-play:hover {
 ---------------------- */
 
 .about {
-    border: var(--border-main);
+    border-left: var(--border-main);
+    border-right: var(--border-main);
     background: #fff;
     scroll-margin-top: calc(var(--sm-block) * 2);
 }
