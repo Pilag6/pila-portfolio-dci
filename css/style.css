@@ -235,7 +235,7 @@ header {
 ---------------------- */
 
 .hero {
-    height: calc(100vh - (var(--sm-block) * 2));
+    height: calc(100vh - (85px * 2));
     border-left: var(--border-main);
     border-right: var(--border-main);
 
@@ -866,6 +866,7 @@ i.fa-play:hover {
 .about {
     border: var(--border-main);
     background: #fff;
+    scroll-margin-top: calc(var(--sm-block) * 2);
 }
 
 .about-logo {
